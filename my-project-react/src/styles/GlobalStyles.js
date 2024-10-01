@@ -68,6 +68,7 @@ ul{
             max-width: 600px !important; /* Corrigido com espaço antes de !important */
             margin-right:100px;
             margin-left:-30px !important;
+            border-radius:10px;
 
         }
     }
