@@ -5,7 +5,9 @@ import {Title} from './styled'
 
 
 export default function Login(){
-    const notify = () => toast.success("Mensagem de sucesso!");
+    const notify = () => toast.success("Mensagem de sucesso!", {
+        className: "custom-toast", // Adicionando uma classe personalizada
+    });
 
     useEffect(() => {
         notify(); // Chama a função de notificação

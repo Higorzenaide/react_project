@@ -52,8 +52,39 @@ ul{
 /* Seu CSS customizado */
 .Toastify__toast {
    margin-top:-10px;
-}
 
+    /* Estilo específico para telas pequenas */
+    @media (max-width: 500px) {
+        .Toastify__toast {
+            max-width: 20px !important; /* Corrigido com espaço antes de !important */
+            width: auto; /* Isso pode ajudar a garantir que o toast não ultrapasse o max-width */
+        }
+    }
+    }
+.Toastify__toast-container{
+    /* Estilo específico para telas pequenas */
+    @media (max-width: 500px) {
+        .Toastify__toast {
+            max-width: 600px !important; /* Corrigido com espaço antes de !important */
+            margin-right:100px;
+            margin-left:-30px !important;
+
+        }
+    }
+
+    /* Para telas menores que 480px */
+    @media (max-width: 480px) {
+        .Toastify__toast {
+            max-width: 300px !important; /* Corrigido com espaço antes de !important */
+                width: auto; /* Isso pode ajudar a garantir que o toast não ultrapasse o max-width */
+                justify-content:center !important;
+                align-items:center !important;
+                margin-left:70px !important;
+                margin-top: 5px !important;
+            }
+
+    }
+}
 `;
 
 
