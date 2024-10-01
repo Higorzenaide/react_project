@@ -1,5 +1,7 @@
+import 'react-toastify/dist/ReactToastify.css'
 import styled, {createGlobalStyle} from 'styled-components';
-import {primaryColor,primaryDarkColor} from '../config/color'
+import {primaryColor,primaryDarkColor, errorColor, sucessColor} from '../config/color'
+
 
 export default createGlobalStyle`
 
@@ -47,7 +49,14 @@ ul{
     list-style: none;
 }
 
+/* Seu CSS customizado */
+.Toastify__toast {
+   margin-top:-10px;
+}
+
 `;
+
+
 
 
 export const Container = styled.section`
